@@ -10,6 +10,11 @@ import {
 import font from './constants/font';
 
 
+import { View } from 'react-native';
+import Navigator from './navigation/navigator';
+
+
+
 const App = () => {
 
   let [fontsLoaded] = useFonts({
@@ -26,15 +31,7 @@ const App = () => {
   return (
     <SafeAreaProvider>
       <ThemeProvider theme={theme}>
-        <Text h1 style={{
-          fontFamily: font.bold
-        }}>ROCKSTAR PAY</Text>
-        <Text h1 style={{
-          fontFamily: font.regular
-        }}>ROCKSTAR PAY</Text>
-        <Text h1 style={{
-          fontFamily: font.medium
-        }}>ROCKSTAR PAY</Text>
+        <Navigator />
       </ThemeProvider>
     </SafeAreaProvider>
   )
