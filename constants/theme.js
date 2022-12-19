@@ -1,8 +1,8 @@
 import { createTheme } from "@rneui/themed";
+import colors from "./colors"
 
 export default createTheme({
     lightColors: {
-        primary: '#17BEBB',
-        secondary: '#56E39F'
+        ...colors
     },
 });
