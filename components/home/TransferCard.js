@@ -16,7 +16,7 @@ const TransferCard = () => {
     const transferItems = [
         {
             title: "Scan QR",
-            action: "Scan",
+            action: "ScanStack",
             icon: <MIcon name="qr-code-scanner" size={36} color="white" />
         },
         {
