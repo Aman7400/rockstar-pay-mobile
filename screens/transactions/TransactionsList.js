@@ -12,9 +12,9 @@ const TransactionsList = ({ navigation }) => {
     }
     const [isVisible, setIsVisible] = useState(false);
     return (
-        <View style={{ paddingTop: insets.top }}>
+        <View style={{ paddingTop: insets.top, backgroundColor:palette.white }}>
             <View style={{ padding: 12, flexDirection: "row" }}>
-                <Icon name="arrowleft" type="antdesign" />
+                <Icon onPress={() => navigation.goBack()} name="arrowleft" type="antdesign" />
                 <Text h4 style={{ fontFamily: font.bold, marginLeft: 12 }}>All Transactions</Text>
                 <Icon onPress={() => setIsVisible(true)} containerStyle={{ marginLeft: "auto" }} name="filter" type="antdesign" />
             </View>
