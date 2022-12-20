@@ -13,7 +13,7 @@ const getTabIcon = ({ focused, color, size }, route) => {
 
         iconName = focused ? 'scan' : 'ios-scan-outline'
 
-    } else if (route.name === 'Activity') {
+    } else if (route.name === 'TransactionStack') {
 
         iconName = focused ? 'stats-chart' : 'stats-chart-outline'
 

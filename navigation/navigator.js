@@ -9,6 +9,8 @@ import { getTabIcon } from '../utils/getTabIcons';
 import NotFound from '../screens/NotFound';
 import Pay from '../screens/Pay';
 import BillPayment from '../screens/BillPayment';
+import TransactionsList from '../screens/transactions/TransactionsList';
+import TransactionDetails from '../screens/transactions/TransactionDetails';
 
 const Tab = createBottomTabNavigator();
 
@@ -36,7 +38,7 @@ export default function Navigator() {
                         display: "none",
                     }
                 }} name="ScanStack" component={ScanStackScreen} />
-                <Tab.Screen name="Activity" component={Activity} />
+                <Tab.Screen name="TransactionStack" component={TransactionStackScreen} />
             </Tab.Navigator>
         </NavigationContainer >
     )
@@ -75,6 +77,19 @@ function ScanStackScreen() {
                 headerShown: false,
             }}>
             <Stack.Screen name="Scan" component={Scan} />
+        </Stack.Navigator>
+    );
+}
+
+
+function TransactionStackScreen() {
+    return (
+        <Stack.Navigator
+            screenOptions={{
+                headerShown: false,
+            }}>
+            <Stack.Screen name="Transactions" component={TransactionsList} />
+            <Stack.Screen name="TransactionDetails" component={TransactionDetails} />
         </Stack.Navigator>
     );
 }
