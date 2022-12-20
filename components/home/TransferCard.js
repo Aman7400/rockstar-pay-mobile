@@ -39,7 +39,17 @@ const TransferCard = () => {
 
 
     return (
-        <View style={{ marginVertical: 8 }}>
+        < View style={{
+            // padding: 12,
+            borderRadius: 8,
+            backgroundColor: "white",
+            position: "absolute",
+            width: "90%",
+            alignSelf: "center",
+            top: 172 ,
+
+        }
+        }>
             <Card
                 containerStyle={{
                     borderRadius: 8,
@@ -55,7 +65,7 @@ const TransferCard = () => {
                 </View>
 
             </Card>
-        </View>
+        </View >
     )
 }
 

@@ -6,6 +6,7 @@ import TransferCard from '../components/home/TransferCard';
 import BillPayments from '../components/home/BillPayments';
 import TransactionsList from '../components/home/TransactionList';
 import BalanceCard from '../components/home/BalanceCard';
+import { palette } from '../constants/colors';
 
 const Home = ({ navigation }) => {
   const insets = useSafeAreaInsets();
@@ -13,17 +14,25 @@ const Home = ({ navigation }) => {
     navigation.navigate("Profile")
   }
   return (
-    <View style={{ padding: 16, paddingTop: insets.top, flex: 1 }}>
-      <Toolbar handlePressAvatar={handlePressAvatar} />
+    <View style={{ paddingTop: insets.top, flex: 1, backgroundColor: palette.white }}>
+      <View style={{ backgroundColor: palette.blue, padding: 16, height: "30%", position: "relative" }}>
+
+      </View>
+      {/* <Toolbar handlePressAvatar={handlePressAvatar} /> */}
       {/* Balance and Accounts */}
-      <BalanceCard />
+      {/* <BalanceCard /> */}
       {/* Money Transfer */}
       <TransferCard />
       {/* Transactions */}
-      <TransactionsList />
+      <View style={{ padding: 16, paddingTop:128, height: "70%", position: "relative" }}>
+        <BillPayments />
+        <TransactionsList />
+      </View>
     </View>
   )
 }
+
+
 
 
 

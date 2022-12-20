@@ -8,6 +8,7 @@ import Profile from '../screens/Profile';
 import { getTabIcon } from '../utils/getTabIcons';
 import NotFound from '../screens/NotFound';
 import Pay from '../screens/Pay';
+import BillPayment from '../screens/BillPayment';
 
 const Tab = createBottomTabNavigator();
 
@@ -61,6 +62,7 @@ function HomeStackScreen() {
                     display: "none",
                 }
             }} name="Pay" component={Pay} />
+            <Stack.Screen name="BillPayment" component={BillPayment} />
             <Stack.Screen name="NotFound" component={NotFound} />
         </Stack.Navigator>
     );

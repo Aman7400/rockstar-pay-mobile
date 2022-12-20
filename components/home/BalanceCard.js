@@ -8,10 +8,13 @@ const BalanceCard = () => {
     return (
         <View style={{
             padding: 12,
-            marginVertical: 8,
-            marginTop:16,
             borderRadius: 8,
             backgroundColor: "white",
+            // position: "absolute",
+            // width:"90%",
+            // alignSelf: "center",
+            // top: 128,
+
         }}>
             <Text h4 style={{ fontFamily: font.bold, marginBottom: 8 }}>Accounts</Text>
             <View style={{  borderRadius: 4 }}>
