@@ -1,8 +1,8 @@
 
 import { Icon, Text } from "@rneui/themed";
 import { FlatList, View } from "react-native";
-import colors from "../../constants/colors";
-import font from "../../constants/font";
+import colors from "../../src/constants/colors";
+import font from "../../src/constants/font";
 import { useNavigation } from "@react-navigation/native"
 
 export default function TransactionsList() {

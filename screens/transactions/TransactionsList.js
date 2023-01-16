@@ -2,8 +2,8 @@ import { FlatList, TouchableOpacity, View } from 'react-native'
 import React, { useState } from 'react'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { Card, Icon, Text, BottomSheet, Button } from '@rneui/themed';
-import font from "../../constants/font"
-import colors, { palette } from '../../constants/colors';
+import font from "../../src/constants/font"
+import colors, { palette } from '../../src/constants/colors';
 
 const TransactionsList = ({ navigation }) => {
     const insets = useSafeAreaInsets();

@@ -1,8 +1,8 @@
 import { View, StyleSheet, ScrollView, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Button, Card, Icon, Text } from '@rneui/themed';
-import font from "../../constants/font"
-import colors, { palette } from '../../constants/colors';
+import font from "../../src/constants/font"
+import colors, { palette } from '../../src/constants/colors';
 import {useNavigation} from "@react-navigation/native";
 
 const BillPayments = () => {

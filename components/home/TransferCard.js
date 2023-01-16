@@ -1,11 +1,11 @@
 import { View, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Button, Card, Text } from '@rneui/themed';
-import font from "../../constants/font"
+import font from "../../src/constants/font"
 import MIcon from "react-native-vector-icons/MaterialIcons"
 import MCIcon from "react-native-vector-icons/MaterialCommunityIcons"
 import ADIcon from "react-native-vector-icons/AntDesign"
-import colors from '../../constants/colors';
+import colors from '../../src/constants/colors';
 import { useNavigation } from "@react-navigation/native"
 
 

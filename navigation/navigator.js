@@ -1,16 +1,16 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Home from '../screens/Home';
-import Scan from '../screens/Scan';
-import Activity from '../screens/Activity';
-import Profile from '../screens/Profile';
+import Home from '../../../screens/Home';
+import Scan from '../../../screens/Scan';
+import Activity from '../../../screens/Activity';
+import Profile from '../../../screens/Profile';
 import { getTabIcon } from '../utils/getTabIcons';
-import NotFound from '../screens/NotFound';
-import Pay from '../screens/Pay';
-import BillPayment from '../screens/BillPayment';
-import TransactionsList from '../screens/transactions/TransactionsList';
-import TransactionDetails from '../screens/transactions/TransactionDetails';
+import NotFound from '../../../screens/NotFound';
+import Pay from '../../../screens/Pay';
+import BillPayment from '../../../screens/BillPayment';
+import TransactionsList from '../../../screens/transactions/TransactionsList';
+import TransactionDetails from '../../../screens/transactions/TransactionDetails';
 
 const Tab = createBottomTabNavigator();
 

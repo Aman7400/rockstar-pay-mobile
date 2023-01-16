@@ -2,7 +2,7 @@ import { FlatList, View } from 'react-native'
 import React from 'react'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { Card, Icon, Text } from '@rneui/themed';
-import font from "../constants/font"
+import font from "../src/constants/font"
 
 const Activity = ({navigation}) => {
   const insets = useSafeAreaInsets();

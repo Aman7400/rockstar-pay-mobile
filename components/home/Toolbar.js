@@ -1,7 +1,7 @@
 import { Avatar, Text } from '@rneui/themed'
 import React from 'react'
 import { Pressable, View } from 'react-native'
-import font from '../../constants/font'
+import font from '../../src/constants/font'
 import getGreetings from '../../utils/getGreetings'
 
 const Toolbar = ({ handlePressAvatar }) => {

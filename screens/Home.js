@@ -6,7 +6,7 @@ import TransferCard from '../components/home/TransferCard';
 import BillPayments from '../components/home/BillPayments';
 import TransactionsList from '../components/home/TransactionList';
 import BalanceCard from '../components/home/BalanceCard';
-import { palette } from '../constants/colors';
+import { palette } from '../src/constants/colors';
 
 const Home = ({ navigation }) => {
   const insets = useSafeAreaInsets();
